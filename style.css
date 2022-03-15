@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    width: 100%;
+}
+
+body{
+    /* margin: 0 2%; */
+    background-color: #d5cfcf26;
+}
+
+/* header */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.top{
+    padding: 0 5%;
+    /* height: 15vh; */
+}
+
+/* menu bar */
+.menu-bar {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* hyperlinks */
+a{
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+a:hover, .fa-bars:hover, .logo:hover{
+    color: #46d332e6;
+}
+
+.hyperlink{
+    width: 3% !important;
+}
+
+/* buttons */
+.btn{
+    margin: auto;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn button {
+    border-radius: 25px;
+    width: 5rem;
+    padding: 3% 6%;
+    background-color: white;
+}
+
+.btn button:hover{
+    background-color:#46d332e6;
+    border-color: #46d332e6;
+    color: white;
+}
+
+/* The Rail Park */
+.rail-park {
+    width: 80%;
+    margin: auto;
+    font-size: 4rem;
+}
+
+/* arrows */
+.prev, .next{
+    margin: auto 2%;
+    width: 4%;
+    transition-duration: 0.3s;
+}
+
+.prev:hover, .left:hover{
+    transform: rotate(180deg) translateX(5px);
+    cursor: pointer;
+}
+
+.prev{
+    transform: rotate(180deg);
+}
+
+.next:hover, .right:hover{
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+.left:hover{
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+/* images */
+.images{
+    display: flex;
+}
+
+.images-heading{
+    display: inline;
+}
+
+.flex-part{
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.flex-part-img{
+    display: inline-flex;
+    width: 55%;
+}
+
+.rotating-img{
+    position: relative;
+    width: 20%;
+    right: 10%;
+    top: -21%;
+    animation: rotation 30s infinite linear;
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.flex-part a{
+    font-size: 2rem;
+    color: #46d332e6;    
+    text-align: start;
+}
+
+.flex-part a:hover{
+    color: black;
+}
+
+.image-1, .image-2 {
+    display: flex;
+    padding: 0 3rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: 500;
+    width: 88%;
+}
+
+.images>div>img{
+    width: 50%;
+}
+
+.image-2{
+    display: none;
+}
+
+/* Visitng park */
+.visit{
+    width: 80%;
+    margin: auto;
+    margin-top: 6%;
+}
+
+.visit-heading{
+    text-align: end;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+.visit-img video{
+    border-radius: 6px;
+}
+
+.visit-content{
+    /* width: 40%; */
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.visit-1, .visit-2{
+    display: flex;
+}
+
+.left, .right {
+    width: 4%;
+    transition-duration: 0.3s;
+    /* margin-left: 4%; */
+}
+
+/* .tooltip-wrap{
+  display: none;
+  position: relative;
+  z-index: -1;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #46d332e6;
+  padding: .5em;
+  color: white;
+} */
+
+/* #wheelchair:hover{
+    transition-delay: 1s;
+} */
+
+/* content-2 */
+.content-2{
+    display: flex;
+}
+
+#wheelchair, #staircase{
+    width: 6%;
+    cursor: pointer;
+}
+
+.content-2 h3{
+    width: 50%;
+}
+
+/* content-3 */
+.content-3 {
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.visit-2{
+    margin-top: 10%;
+}
+
+/* Vision */
+.vision{
+    width: 80%;
+    margin: 10% auto;
+}
+
+.donate{
+    display: flex;
+    margin: 5% 0;
+}
+
+.donate p{
+    font-size: 2rem;
+}
+
+.donate .btn #donate-btn{
+    width: 20%;
+    padding: 1% 1%;
+    font-size: 1.25rem;
+}
+
+/* Tour */
+.tour{
+    display: flex;
+    width: 80%;
+    margin: 5% 10%;
+}
+
+#tour-img{
+    width: 50%;
+}
+
+.tour-content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4%;
+    font-size: 1.5rem;
+    width: 92%;
+}
+
+.tour-content > *{
+    padding: 1rem 0;
+}
+
+.tour-content h3{
+    width: 100%;
+}
+
+.tour .rotating-img{
+    top: 374%;
+    right: 10%;
+}
+
+/* News and Events */
+.news{
+    display: grid;
+    grid-template-areas: 
+    'section section section section section section'
+    'div div div div div div';
+    grid-gap: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+.empty{
+    display: none;
+}
+
+.cal{
+    grid-area: section;
+    text-align: end;
+    padding: 2rem 0;
+}
+
+#cal{
+    border-radius: 2rem;
+    border: 2px solid black;
+    padding: 0.75rem 1rem;
+}
+
+#news-events{
+    transform: rotate(-90deg);
+    font-size: 3rem;
+    margin: auto;
+    position: relative;
+    top: 15rem;
+    font-weight: 500;
+}
+
+.news-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.news-content h4{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+small{
+    font-size: 1rem;
+}
+
+small:hover{
+    cursor: pointer;
+    color: #46d332e6;
+    transition-delay: 0.1s;
+}
+
+/* email */
+.email{
+    /* width: 80%; */
+    height: 40%;
+    margin: 5% 0;
+    background-color:#46d332e6;
+    margin-bottom: 0;
+}
+
+.email div{
+    width: 70%;
+    padding: 10% 0;
+    margin: auto;
+    text-align: center;
+}
+
+.email div p{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+input{
+    border: none;
+    border-bottom: 0.2px solid black;
+    width: 40%;
+}
+
+/* input:focus{
+    border: none;
+    border-bottom: 0.3px solid black;
+} */
+
+#submit{
+    border: none;
+    width: 20%;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+}
+
+#footer{
+    display: flex;
+    padding: 5% 0;
+    width: 80%;
+    margin: auto;
+}
+
+#coin{
+    width: 10%;
+    position: absolute;
+}
+
+#footer .rotating-img{
+    position: inherit;
+}
+
+.footer-1, .footer-2, .footer-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1 div > *, .footer-2 div > *, .footer-3 div > *{
+    margin-top: 8%;
+}
+
+.footer-1 div > a, .footer-2 div > a, .footer-3 div > a{
+    color: white;
+}
+
+.footer-1 div > a:hover, .footer-2 div > a:hover, .footer-3 div > a:hover{
+    color: #46d332e6;
+}
+
+@media (max-width: 1400px){
+
+    .news{
+        grid-template-areas: 
+        'section section section'
+        'div div div'
+        'div div div';
+    }
+
+    #news-content-5{
+        display: none;
+    }
+    .empty{
+        display: flex;
+    }
+}
+
+@media (max-width: 970px){
+
+    .visit-heading{
+        text-align: center;
+    }
+
+    .visit-1{
+        flex-direction: column;
+    }
+
+    .left-1{
+        transform: rotate(90deg);
+    }
+    
+    .visit-2{
+        flex-direction: column-reverse;
+    }
+
+    .right-1{
+        transform: rotate(-90deg);
+    }
+
+    .content-2, .content-3{
+        justify-content: space-between;
+    }
+
+    .dir{
+        text-align: end;
+    }
+
+    #visit-img-1{
+        margin-top: 2rem;
+    }
+
+    .vision h2{
+        font-size: 3rem;
+    }
+
+    .donate .btn #donate-btn{
+        width: 30%;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    .tour-content>div{
+        font-size: 0.75em;
+    }
+
+    .footer-2, .footer-3{
+        display: none;
+    }
+
+    .footer-1 > *{
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px){
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .flex-part a{
+        font-size: 1.25rem;
+    }
+
+    .donate p{
+        font-size: 1.7rem;
+    }
+
+    .tour{
+        flex-direction: column;
+    }
+
+    #tour-img{
+        width: 100%;
+    }
+
+    .tour .rotating-img{
+        right: -85%;
+    }
+
+    .news-content h4{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px){
+    
+    .header {
+        padding: 0;
+        margin: 5%;
+        width: 90%;
+    }
+
+    #visit, #vision, .btn{
+        display: none;
+    }
+
+    #menu-bar{
+        text-align: left;
+    }
+
+    #logo{
+        text-align: right;
+    }
+
+    .images .prev, .images .next{
+        display: none;
+    }
+
+    .image-1, .image-2{
+        flex-direction: column-reverse;
+    }
+
+    .image-1 > *, .image-2 > *{
+        width: fit-content;
+    }
+
+    .rotating-img{
+        top: -50%;
+        right: 25%;
+        width: 10%;
+    }
+
+    .cal{
+        display: none;
+    }
+
+    #news-events{
+        transform: rotate(0deg);
+        position: static;
+        text-align: center;
+    }
+
+    .news{
+        grid-template-areas: 
+        'div'
+        'div'
+        'div'
+        'div'
+        'div'
+        'div';
+    }
+}
+
+@media (max-width: 500px){
+
+    h1{
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .flex-part a {
+        font-size: 1rem;
+    }
+
+    .left, .right{
+        width: 2%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .content-3{
+        font-size: 1rem;
+    }
+
+    .vision h2 {
+        font-size: 2.5rem;
+    }
+
+    .donate p {
+        font-size: 1.3rem;
+    }
+
+    .tour-content>div {
+        font-size: 0.5em;
+    }
+
+    #news-events{
+        font-size: 2.25rem;
+    }
+
+    .news-content h4 {
+        font-size: 1.2rem;
+    }
+
+    small {
+        font-size: 0.75rem;
+    }
+}
