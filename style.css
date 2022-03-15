@@ -35,6 +35,7 @@ a{
     margin: auto;
     text-align: center;
     font-size: 1.2rem;
+    color: black;
 }
 
 a:hover, .fa-bars:hover, .logo:hover{
